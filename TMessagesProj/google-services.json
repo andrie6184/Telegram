@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1081704067882",
+    "firebase_url": "https://tokengram-1ffe1.firebaseio.com",
+    "project_id": "tokengram-1ffe1",
+    "storage_bucket": "tokengram-1ffe1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081704067882:android:65e53a66635174cc",
+        "android_client_info": {
+          "package_name": "org.telegram.messenger.token"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081704067882-hfu94vhdvn1r9s6qn2totp8gc4do2vag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5vUJrqFWEILgWNN_FeCm2dLwJ46GveAM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

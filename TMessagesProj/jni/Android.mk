@@ -94,7 +94,7 @@ endif
 
 MY_DIR := libtgvoip
 
-LOCAL_C_INCLUDES := jni/opus/include jni/boringssl/include/ jni/libtgvoip/webrtc_dsp/
+LOCAL_C_INCLUDES := opus/include boringssl/include/ libtgvoip/webrtc_dsp/
 
 LOCAL_SRC_FILES := \
 ./libtgvoip/logging.cpp \
@@ -229,7 +229,7 @@ include $(BUILD_STATIC_LIBRARY)
 include $(CLEAR_VARS)
 
 LOCAL_CPPFLAGS := -Wall -std=c++11 -DANDROID -frtti -DHAVE_PTHREAD -finline-functions -ffast-math -O0
-LOCAL_C_INCLUDES += ./jni/boringssl/include/
+LOCAL_C_INCLUDES += boringssl/include/
 LOCAL_ARM_MODE := arm
 LOCAL_MODULE := tgnet
 LOCAL_STATIC_LIBRARIES := crypto
@@ -259,7 +259,7 @@ include $(BUILD_STATIC_LIBRARY)
 include $(CLEAR_VARS)
 
 LOCAL_CFLAGS := -Wall -DANDROID -DHAVE_MALLOC_H -DHAVE_PTHREAD -DWEBP_USE_THREAD -finline-functions -ffast-math -ffunction-sections -fdata-sections -O0
-LOCAL_C_INCLUDES += ./jni/libwebp/src
+LOCAL_C_INCLUDES += libwebp/src
 LOCAL_ARM_MODE := arm
 LOCAL_STATIC_LIBRARIES := cpufeatures
 LOCAL_MODULE := webp
@@ -556,17 +556,17 @@ LOCAL_SRC_FILES     += \
 ./opus/opusfile/stream.c
 
 LOCAL_C_INCLUDES    := \
-./jni/opus/include \
-./jni/opus/silk \
-./jni/opus/silk/fixed \
-./jni/opus/celt \
-./jni/opus/ \
-./jni/opus/opusfile \
-./jni/libyuv/include \
-./jni/boringssl/include \
-./jni/ffmpeg/include \
-./jni/emoji \
-./jni/intro
+./opus/include \
+./opus/silk \
+./opus/silk/fixed \
+./opus/celt \
+./opus/ \
+./opus/opusfile \
+./libyuv/include \
+./boringssl/include \
+./ffmpeg/include \
+./emoji \
+./intro
 
 LOCAL_SRC_FILES     += \
 ./libyuv/source/compare_common.cc \
