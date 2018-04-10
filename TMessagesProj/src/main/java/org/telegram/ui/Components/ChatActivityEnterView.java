@@ -103,6 +103,7 @@ public class ChatActivityEnterView extends FrameLayout implements NotificationCe
         void onWindowSizeChanged(int size);
         void onStickersTab(boolean opened);
         void onMessageEditEnd(boolean loading);
+        void didPressedTokenButton();
         void didPressedAttachButton();
         void needStartRecordVideo(int state);
         void needChangeVideoPreviewState(int state, float seekProgress);
@@ -197,6 +198,7 @@ public class ChatActivityEnterView extends FrameLayout implements NotificationCe
     private RecordDot recordDot;
     private SizeNotifierFrameLayout sizeNotifierLayout;
     private LinearLayout attachLayout;
+    private ImageView tokenButton;
     private ImageView attachButton;
     private ImageView botButton;
     private LinearLayout textFieldContainer;
@@ -994,6 +996,21 @@ public class ChatActivityEnterView extends FrameLayout implements NotificationCe
                     }
                     visibleToast.show();
                     updateFieldHint();
+                }
+            });
+
+            tokenButton = new ImageView(context);
+            tokenButton.setColorFilter(new PorterDuffColorFilter(Theme.getColor(Theme.key_chat_messagePanelIcons), PorterDuff.Mode.MULTIPLY));
+            tokenButton.setImageResource(R.drawable.s_play);
+            tokenButton.setScaleType(ImageView.ScaleType.CENTER);
+//            if (Build.VERSION.SDK_INT >= 21) {
+//                attachButton.setBackgroundDrawable(Theme.createSelectorDrawable(Theme.INPUT_FIELD_SELECTOR_COLOR));
+//            }
+            attachLayout.addView(tokenButton, LayoutHelper.createLinear(48, 48));
+            tokenButton.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    delegate.didPressedAttachButton();
                 }
             });
 

@@ -363,6 +363,11 @@ public class PopupNotificationActivity extends Activity implements NotificationC
             }
 
             @Override
+            public void didPressedTokenButton() {
+
+            }
+
+            @Override
             public void didPressedAttachButton() {
 
             }

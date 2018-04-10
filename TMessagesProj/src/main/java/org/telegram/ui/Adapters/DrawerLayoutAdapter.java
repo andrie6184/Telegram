@@ -30,7 +30,7 @@ import java.util.ArrayList;
 public class DrawerLayoutAdapter extends RecyclerListView.SelectionAdapter {
 
     private Context mContext;
-    private ArrayList<Item> items = new ArrayList<>(11);
+    private ArrayList<Item> items = new ArrayList<>(12);
 
     public DrawerLayoutAdapter(Context context) {
         mContext = context;
@@ -95,7 +95,7 @@ public class DrawerLayoutAdapter extends RecyclerListView.SelectionAdapter {
             return 0;
         } else if (i == 1) {
             return 1;
-        } else if (i == 5) {
+        } else if (i == 6) {
             return 2;
         }
         return 3;
@@ -108,6 +108,7 @@ public class DrawerLayoutAdapter extends RecyclerListView.SelectionAdapter {
         }
         items.add(null); // profile
         items.add(null); // padding
+        items.add(new Item(12, LocaleController.getString("TokenWallet", R.string.TokenWallet), R.drawable.menu_newgroup));
         items.add(new Item(2, LocaleController.getString("NewGroup", R.string.NewGroup), R.drawable.menu_newgroup));
         items.add(new Item(3, LocaleController.getString("NewSecretChat", R.string.NewSecretChat), R.drawable.menu_secret));
         items.add(new Item(4, LocaleController.getString("NewChannel", R.string.NewChannel), R.drawable.menu_broadcast));

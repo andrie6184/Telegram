@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="AppName">Telegram</string>
-    <string name="AppNameBeta">Telegram Beta</string>
+    <string name="AppName">Teleken</string>
+    <string name="AppNameBeta">Teleken Beta</string>
     <string name="LanguageName">English</string>
     <string name="English">English</string>
     <string name="LanguageNameInEnglish">English</string>
@@ -105,6 +105,7 @@
     <string name="NewConversationShortcut">New conversation</string>
     <string name="Settings">Settings</string>
     <string name="Contacts">Contacts</string>
+    <string name="TokenWallet">Token Wallet</string>
     <string name="NewGroup">New Group</string>
     <string name="Yesterday">yesterday</string>
     <string name="NoResult">No results</string>

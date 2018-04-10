@@ -1116,6 +1116,11 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
                 }
 
                 @Override
+                public void didPressedTokenButton() {
+
+                }
+
+                @Override
                 public void didPressedAttachButton() {
 
                 }

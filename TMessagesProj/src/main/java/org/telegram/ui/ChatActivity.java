@@ -3225,6 +3225,11 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
             }
 
             @Override
+            public void didPressedTokenButton() {
+                openAttachMenu();
+            }
+
+            @Override
             public void didPressedAttachButton() {
                 openAttachMenu();
             }
